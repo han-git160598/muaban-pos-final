@@ -27,6 +27,7 @@ io.on("connection", function(socket){
   socket.on('join-store', function(room) {
     socket.join(room.id_business);
     //console.log(room.id_business);
+      io.sockets.emit('joined-store',room);
  });
 
 //mở bàn và đặt món
