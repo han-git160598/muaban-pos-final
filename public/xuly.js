@@ -13,6 +13,9 @@ $(document).ready(function() {
    socket.emit('join-store',a);
   
 });
+socket.on('joined-store',function (data){
+console.log(data);
+});
 //var socket = io.connect();
 // console.log('check 1', socket.connected);
 // socket.on('connect', function() {
